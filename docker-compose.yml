@@ -1,0 +1,12 @@
+version: '2'
+services:
+  builder:
+    build: .
+    environment:
+    - WORKDIR=/workdir
+    - BUILDS=/workdir/builds
+    - KERNEL_BRANCH=rpi-5.2.y 
+    - KERNEL_REPO=https://www.github.com/raspberrypi/linux.git
+    volumes:
+    - ./builds:/workdir/builds
+    privileged: true
