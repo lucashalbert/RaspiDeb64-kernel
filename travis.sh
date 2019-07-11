@@ -16,10 +16,10 @@ if [ -z "$TRAVIS_BRANCH" ]; then
 fi
 
 # Check if GitHub token set
-if [ -z "$GITHUB_TOKEN" ]; then
-  echo "Error: GITHUB_TOKEN environment variable not set"
-  exit 2
-fi
+#if [ -z "$GITHUB_TOKEN" ]; then
+#  echo "Error: GITHUB_TOKEN environment variable not set"
+#  exit 2
+#fi
 
 # run build
 docker-compose build
