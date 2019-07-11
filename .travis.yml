@@ -1,0 +1,11 @@
+language: bash
+services:
+  - docker
+sudo: required
+script:
+  - ./travis.sh
+after_success:
+  - ls -lah builds/*.zip
+branches:
+  only:
+    - master
