@@ -31,6 +31,6 @@ docker-compose run builder
 # Post to GitHub releases
 export GIT_TAG=v${START_TIME}
 export GIT_RELEASE_TEXT="Auto-released by [Travis-CI build #$TRAVIS_BUILD_NUMBER](https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID)"
-curl -sSL https://github.com/tcnksm/ghr/releases/download/v0.12.2/ghr_v0.12.2_linux_amd64.tar.gz | tar -xvf -
+curl -sSL https://github.com/tcnksm/ghr/releases/download/v0.12.2/ghr_v0.12.2_linux_amd64.tar.gz | tar -xzvf -
 ./ghr --version
 ./ghr --debug -u lucashalbert -b "$GIT_RELEASE_TEXT" $GIT_TAG builds/
