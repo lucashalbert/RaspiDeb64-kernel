@@ -1,4 +1,9 @@
 #!/bin/bash
+# Exit on any failure
+set -e
+
+# Enable verbose logging
+set -x
 
 # Get start time
 SECONDS==${SECONDS:=0}
