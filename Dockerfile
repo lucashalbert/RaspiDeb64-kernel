@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 ENV WORKDIR=/workdir \
     BUILDS=/workdir/builds \
-    KERNEL_BRANCH=rpi-5.2.y  \
+    KERNEL_BRANCH=rpi-4.19.y  \
     KERNEL_REPO=https://www.github.com/raspberrypi/linux.git \
     TIMESTAMP_OUTPUT=true
 
